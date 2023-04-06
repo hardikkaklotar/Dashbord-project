@@ -1,0 +1,317 @@
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.avtive1{
+    background: #1A1F37;
+    div{
+        background:#0075FF;
+        path{
+            fill: #fff;
+            transition: color 0.3s;
+        }
+    }
+}
+.apexcharts-toolbar{
+    display: none !important;
+}
+header{
+    a{
+        &:hover{
+            path{
+                fill: #0075FF;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+main{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,144,0.9725140056022409) 22%, rgba(0,212,255,1) 100%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    .active{
+        display: block !important;
+     } 
+    .serchbar{
+        
+        input:focus{
+            outline: #0075FF solid;
+        }
+        @media screen and (max-width:640px) {
+           
+            display: none;
+            position: fixed !important;
+            top: 65px;
+            left: 0;
+            width: 100%;
+               input{
+                   width:100%;
+                   background: rgb(2,0,36);
+                   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,144,0.9725140056022409) 22%, rgba(0,212,255,1) 100%);
+                  }
+       }
+       
+   }
+    section{
+        .sidebar{
+            min-width: 290px;
+            background: linear-gradient(111.84deg, rgba(6, 11, 38, 0.94) 59.3%, rgba(26, 31, 55, 0) 100%);
+            backdrop-filter: blur(60px);
+            @media screen and (max-width:1536px) {
+                position: fixed;
+                top: 0;
+                height: 100%;
+                z-index: 999;
+                left:-320px;
+                transition: all 0.5s;
+                .title{
+                    justify-content: space-evenly;
+                    .close{
+                        display: block;
+                    }
+                }
+            }
+            &.active{
+                left: 0;
+            }
+            nav{
+                a{
+                    &:hover{
+                        div{
+                            background:#0075FF;
+                            path{
+                                fill: #fff;
+                                transition: color 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .documentation{
+            background: url(/public/assets/img/Background.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .header{
+            @media screen and (max-width:1536px) {
+                left: 0;
+             }
+            .hamburgur{
+                @media screen and (max-width:1536px) {
+                    display: block;
+                 }
+                 
+            }
+        }
+        .sales-discount{
+            div{
+                a{
+                    &:hover{
+                        path{
+                            fill:#0075FF;
+                            transition: color 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+        .markjohnson-block{
+            &:first-child{
+                background: url(/public/assets/img/background2.png)no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        .wreppar_block{
+            .markjohnson-block{
+                min-height: 340px;
+                @media screen and (max-width:640px) {
+                    min-height: 300px;
+                }
+            }
+            .chartname{
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        .overview,.bg-color{
+            background: linear-gradient(127.09deg, rgba(6, 11, 40, 0.94) 19.41%, rgba(10, 14, 35, 0.49) 76.65%);
+        }
+        .header{
+            max-width:calc( 100% - 338px) !important;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(46,46,144,0.9725140056022409) 22%, rgba(0,212,255,1) 100%);
+            @media screen and (max-width:1536px) {
+                max-width:100% !important;
+            }
+        }  
+    }
+}
+.text-smoll{
+    font-size: 10px;
+}
+
+/* TABLES PAGE START */ 
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.table_block{
+    min-width: 700px;
+}
+
+
+/* BILING PAGE START */  
+.billing_section{
+    .input-box{
+        background: linear-gradient(117.45deg, rgba(255, 255, 255, 0) -3.91%, rgba(255, 255, 255, 0.039) 75.27%);
+        backdrop-filter: blur(21px);
+        border-color: #597eb6;
+        input{
+            background: transparent;
+        }
+    }
+    .transaction_block{
+        max-height: 450px;
+    }
+}
+
+/* INPUT CHECK BOX PROFIE SECTION */ 
+input:checked[type="checkbox"] {
+    background: #0075FF;
+}
+
+input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 20%;
+    left: 2px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+input:checked[type="checkbox"]::after {
+    left: 60%;
+}
+.profile_section{
+    a{
+        &:hover{
+            path{
+                fill: #0075FF;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+/* SIGN-IN,UP PAGE START*/ 
+.sign-in,.sign-up{
+    header{
+        background: linear-gradient(123.64deg, rgba(255, 255, 255, 0) -22.38%, rgba(255, 255, 255, 0.039) 70.38%);
+        backdrop-filter: blur(21px); 
+        .sidebar_signup{
+            @media screen and (max-width:640px) {
+                background: linear-gradient(111.84deg, rgba(6, 11, 38, 0.94) 59.3%, rgba(26, 31, 55, 0) 100%);
+                position: fixed;
+                top: 67px;
+                width: 250px;
+                height: 100vh;
+                z-index: 999;
+                left:-320px;
+                flex-direction: column;
+                transition: all 0.5s;
+                a{
+                    margin: 0 !important;
+                    padding: 15px;
+                }
+                
+            }
+            &.active{
+                left: 0;
+            }
+        }
+    }
+
+    .bg-img{
+        background: url(/public/assets/img/login-bkg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .form-div{
+        max-width: 440px;
+    }
+    .black-color{
+        background: linear-gradient(159.02deg, #0F123B 14.25%, #090D2E 56.45%, #020515 86.14%);
+        @media screen and (max-width:1023px){
+            background: none;
+        }
+    }
+    input{
+        background: linear-gradient(159.02deg, #0F123B 14.25%, #090D2E 56.45%, #020515 86.14%);
+    }
+    a{
+        &:hover{
+            path{
+                fill: #0075FF;
+                transition: all 0.3s;
+            }
+        }
+    }
+    @media screen and (max-width:1540px) {
+        .title{
+           margin-bottom: 10px;
+           font-size: 10px;
+       }
+       form{
+           padding: 10px 20px;
+           span{
+               margin-bottom: 10px;
+           }
+           .icon_block{
+               margin-bottom: 10px;
+               a{
+                   padding: 10px;
+               }
+           }
+       }
+       footer{
+           margin-top: 20px;
+       }
+    } 
+    @media screen and (max-width:1024px) {
+        form{
+            span{
+                margin-bottom: 5px;
+            }
+            .icon_block{
+                margin-bottom: 5px;
+                a{
+                    padding: 5px;
+                }
+            }
+        }
+        footer{
+            margin-top: 20px;
+            font-size: 10px;
+            p{
+                margin-bottom: 0px;
+            }
+        }
+       
+    } 
+}
