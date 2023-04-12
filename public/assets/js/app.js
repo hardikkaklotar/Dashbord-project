@@ -6,6 +6,7 @@ var __webpack_exports__ = {};
 $('body').on('click', '.hamburgur', function () {
   $(".sidebar").addClass("active");
   $(".serchbar").removeClass("active");
+  $(".sidebar_signup").toggleClass("active");
 });
 $('body').on('click', '.close', function () {
   $(".sidebar").removeClass("active");
@@ -14,6 +15,7 @@ $('body').on('click', '.serch-icon', function () {
   $(".serchbar").toggleClass("active");
   $(".sidebar").removeClass("active");
 });
+
 
 /* CHART---------------------*/
 
